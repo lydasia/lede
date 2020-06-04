@@ -19,6 +19,7 @@ platform_do_upgrade() {
 	netgear,d7800 |\
 	netgear,r7500 |\
 	netgear,r7500v2 |\
+	askey,rt4230w |\
 	netgear,r7800 |\
 	qcom,ipq8064-ap148 |\
 	qcom,ipq8064-ap161 |\

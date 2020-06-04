@@ -330,4 +330,18 @@ define Device/zyxel_nbg6817
 endef
 TARGET_DEVICES += zyxel_nbg6817
 
+define Device/askey_rt4230w
+	$(call Device/DniImage)
+	DEVICE_VENDOR := ASKEY
+	DEVICE_MODEL := RT4230W
+	DEVICE_DTS := qcom-ipq8065-rt4230w
+	KERNEL_SIZE := 4096k
+	BLOCKSIZE := 128k
+	PAGESIZE := 2048
+	BOARD_NAME := rt4230w
+	SUPPORTED_DEVICES += rt4230w
+	DEVICE_PACKAGES := ath10k-firmware-qca9984-ct
+endef
+TARGET_DEVICES += askey_rt4230w
+
 $(eval $(call BuildImage))
